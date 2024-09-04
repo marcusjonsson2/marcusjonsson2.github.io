@@ -1,0 +1,290 @@
+body {
+  font-size: 2rem;
+  width: 100%;
+  background-color: rgb(233, 233, 233);
+  color: rgb(25, 23, 23);
+  margin: auto;
+  padding: 1rem;
+  
+}
+header {
+  align-items: center;
+  justify-content: space-between;
+  background-color: #cbd3e43d;
+  color: rgb(138, 174, 175);
+  text-align: center;
+  padding: 2px;
+  font-size: 1.2rem;
+}
+
+main {
+
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+footer {
+padding: 2px;
+margin: auto;
+
+}
+
+.logotyp img {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  max-width: 400px;
+  width: 100%;
+  padding: 3px;
+  margin: 5px;
+}
+
+.sök {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  color: rgb(138, 174, 175);
+}
+
+.sökbar {
+  padding: 2px;
+  font-size: 1.5rem;
+}
+
+
+.bi-search-heart {
+  
+  color: rgb(178, 153, 153);
+  }
+
+.bi-suit-heart-fill {
+  font-size: 1.6rem;
+  left: 5px;
+  position: relative;
+  width: 100%;
+  align-items: center;
+
+  color: rgb(165, 95, 95);
+}
+
+.bi-basket2-fill {
+  font-size: 1.6rem;
+  left: 9px;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  color: rgb(69, 66, 66);
+}
+
+
+.navigerings-lista a {
+  font-style: italic;
+  padding: 2px;
+  margin: 5px;
+  display: block;
+  color: rgb(138, 174, 175);
+  text-decoration: none;
+  text-align: left;
+  
+}
+
+
+.bilder {
+  gap: 20px;
+  width: 100%;
+  padding: 5px;
+}
+
+.hero-container {
+  border-radius: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px ridge rgb(178, 153, 153);
+  padding: 10px;
+  margin: 2px;
+  width: 100%;
+  height: 36rem;
+  position: relative;
+}
+
+.header-hero {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: rgb(178, 153, 153);
+}
+
+#hero {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.hero-text {
+  font-style: italic;
+  font-size: 1.6rem;
+  margin-top: 10px;
+  text-align: center;
+  color: rgb(178, 153, 153);
+}
+
+  .pil-streck {
+    font-size: 5rem;
+    color: rgb(138, 174, 175)
+  }
+
+.bilder-plagg {
+  color: rgb(178, 153, 153);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.bilder-plagg .accordion {
+  margin-top: 20px;
+}
+
+.bilder-plagg .beskrivning {
+  margin-bottom: 20px;
+}
+
+.bilder-plagg img {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+
+}
+
+.beskrivning {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.nyhet {
+
+    position: relative;
+    top: 250px;
+    right: 130px;
+    padding: 2px;
+    border-radius: 50%;
+    z-index: 10;
+    font-size: 5rem;
+
+}
+
+.nyhet-text {
+    position: relative;
+    top: 170px;
+    right: 138px;
+    font-size: 1.3rem;
+    color: beige;
+    font-style: italic;
+    cursor: pointer;
+    z-index: 10;
+}
+
+
+.overlay-icon {
+  position: absolute;
+  bottom: 110px;
+  right: 0px;
+  font-size: 3rem;
+  color: rgb(138, 174, 175);
+  padding: 2px;
+  cursor: pointer;
+}
+
+.t-hjärta {
+  position: absolute;
+  bottom: 110px;
+  right: 0px;
+  font-size: 3rem;
+  color: rgb(138, 174, 175);
+  padding: 2px;
+  cursor: pointer;
+}
+
+.pris {
+  color: rgb(163, 162, 164);
+  position: absolute;
+  bottom: 90px;
+  right: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.accordion-body {
+
+  border-color: rgb(138, 174, 175);
+  font-size: 1.1rem;
+}
+
+.accordion-item {
+
+    color: rgb(138, 174, 175)
+}
+
+.copyright-text {
+  border-color: rgb(138, 174, 175);
+  border: groove;
+  font-size: 1rem;
+    text-align: center;
+}
+.frakt-ikoner {
+  border-style: groove;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.601);
+}
+
+.pris {
+  font-size: 1.5rem;
+  right: 0;
+  margin: 5px;
+  padding: 0;
+   
+}
+
+.accordion-body a {
+  position: relative;
+  display: block;
+  padding: 0px;
+  margin: auto;
+  display: block;
+  color: rgb(85, 80, 70);
+  text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+@media (min-width: 640px) {
+
+
+} 
+
+@media (min-width: 1024px) {
+
+
+}
