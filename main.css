@@ -2,100 +2,115 @@ body {
   font-size: 2rem;
   width: 100%;
   background-color: rgb(233, 233, 233);
-  color: rgb(25, 23, 23);
   margin: auto;
-  padding: 1rem;
-  
+  padding: 0.3rem;
 }
 header {
-  align-items: center;
-  justify-content: space-between;
+  display: flex;
   background-color: #cbd3e43d;
   color: rgb(138, 174, 175);
-  text-align: center;
-  padding: 2px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  padding: 10px;
+  flex-direction: column;
 }
 
 main {
-
-  justify-content: space-between;
   display: flex;
   flex-direction: column;
-  
 }
-
 
 footer {
-padding: 2px;
-margin: auto;
-
+  padding: 0;
+  margin: 0;
 }
 
-.logotyp img {
+.spots {
+  display: none;
+}
+
+.logotype-searchbar-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.logotype img {
   justify-content: center;
   align-items: center;
   display: flex;
-  max-width: 400px;
   width: 100%;
+  height: auto;
   padding: 3px;
   margin: 5px;
 }
 
-.sök {
-  display: flex;
-  align-items: center;
-  padding: 2px;
-  color: rgb(138, 174, 175);
-}
-
-.sökbar {
-  padding: 2px;
+.search-icons {
+  margin: 0;
   font-size: 1.5rem;
+  justify-content: flex-end;
+  display: flex;
 }
-
-
-.bi-search-heart {
-  
-  color: rgb(178, 153, 153);
-  }
 
 .bi-suit-heart-fill {
-  font-size: 1.6rem;
-  left: 5px;
-  position: relative;
-  width: 100%;
-  align-items: center;
-
-  color: rgb(165, 95, 95);
+  padding: 3px;
+  color: rgb(200, 107, 107);
 }
 
 .bi-basket2-fill {
-  font-size: 1.6rem;
-  left: 9px;
-  position: relative;
-  width: 100%;
-  align-items: center;
-  color: rgb(69, 66, 66);
+  color: rgb(97, 86, 86);
+  padding: 0;
 }
 
+.searchbar {
+  width: 80%;
+  display: flex;
+  border-radius: 15px;
+  margin: 0;
+  padding: 0;
+  border: 2px solid rgb(178, 153, 153);
+  margin-bottom: 20px;
+}
 
-.navigerings-lista a {
+#search-input {
+  width: 100%;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 15px;
+  padding: 0;
+  background-color: #cbd3e400;
+  color: rgb(178, 153, 153);
+}
+
+#search-input::placeholder {
+  color: rgb(178, 153, 153);
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+}
+
+button i {
+  font-size: 1.6rem;
+}
+
+.search-button {
+  margin-left: 10px;
+}
+
+.bi-search-heart {
+  color: rgb(178, 153, 153);
+}
+
+.navigation-list a {
   font-style: italic;
-  padding: 2px;
-  margin: 5px;
-  display: block;
   color: rgb(138, 174, 175);
   text-decoration: none;
   text-align: left;
-  
-}
-
-
-.bilder {
-  gap: 20px;
-  width: 100%;
-  padding: 5px;
 }
 
 .hero-container {
@@ -106,186 +121,507 @@ margin: auto;
   justify-content: center;
   border: 2px ridge rgb(178, 153, 153);
   padding: 10px;
-  margin: 2px;
+  margin: 20px auto;
   width: 100%;
-  height: 36rem;
-  position: relative;
+  background-color: rgba(138, 174, 175, 0.293);
 }
 
 .header-hero {
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin: 20px 0;
   color: rgb(178, 153, 153);
 }
 
 #hero {
   max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+  height: 100%;
+  border-radius: 10px;
 }
 
 .hero-text {
   font-style: italic;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin-top: 10px;
   text-align: center;
   color: rgb(178, 153, 153);
 }
 
-  .pil-streck {
-    font-size: 5rem;
-    color: rgb(138, 174, 175)
-  }
+.arrow-line {
+  padding: 10px;
+  margin-top: 10%;
+  font-size: 5rem;
+  color: rgb(138, 174, 175);
+}
 
-.bilder-plagg {
+.btn-outline-light {
+  color: rgb(255, 255, 255);
+  background-color: rgb(138, 174, 175);
+  position: relative;
+  top: 5rem;
+  right: 5rem;
+  padding: 2px;
+  z-index: 10;
+  font-size: 30px;
+  border-radius: 20px;
+}
+
+.clothing-images {
   color: rgb(178, 153, 153);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: relative;
   padding: 4px;
   border-radius: 8px;
 }
 
-.bilder-plagg .accordion {
-  margin-top: 20px;
-}
-
-.bilder-plagg .beskrivning {
+.clothing-images,
+.image-description {
   margin-bottom: 20px;
 }
 
-.bilder-plagg img {
+.clothing-images img {
   max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
   width: 100%;
   height: auto;
   border-radius: 50%;
-  object-fit: cover;
-
+  object-fit: contain;
 }
 
-.beskrivning {
-  font-size: 1.3rem;
+.image-description {
+  position: relative;
+  padding: 10px;
+  right: 5.5rem;
   margin-top: 10px;
-  text-align: center;
+  font-size: 1rem;
 }
 
-.nyhet {
-
-    position: relative;
-    top: 250px;
-    right: 130px;
-    padding: 2px;
-    border-radius: 50%;
-    z-index: 10;
-    font-size: 5rem;
-
-}
-
-.nyhet-text {
-    position: relative;
-    top: 170px;
-    right: 138px;
-    font-size: 1.3rem;
-    color: beige;
-    font-style: italic;
-    cursor: pointer;
-    z-index: 10;
-}
-
-
-.overlay-icon {
-  position: absolute;
-  bottom: 110px;
-  right: 0px;
+.overlay-icon,
+.t-heart {
+  position: relative;
+  bottom: 12rem;
+  left: 8.5rem;
   font-size: 3rem;
   color: rgb(138, 174, 175);
   padding: 2px;
   cursor: pointer;
 }
 
-.t-hjärta {
-  position: absolute;
-  bottom: 110px;
-  right: 0px;
-  font-size: 3rem;
-  color: rgb(138, 174, 175);
-  padding: 2px;
-  cursor: pointer;
-}
-
-.pris {
+.price {
   color: rgb(163, 162, 164);
-  position: absolute;
-  bottom: 90px;
-  right: 10px;
+  position: relative;
+  bottom: 12rem;
+  left: 7rem;
   font-size: 25px;
   font-weight: bold;
 }
 
-.accordion-body {
-
-  border-color: rgb(138, 174, 175);
-  font-size: 1.1rem;
-}
-
-.accordion-item {
-
-    color: rgb(138, 174, 175)
-}
-
-.copyright-text {
-  border-color: rgb(138, 174, 175);
-  border: groove;
-  font-size: 1rem;
-    text-align: center;
-}
-.frakt-ikoner {
-  border-style: groove;
+.shipping-icons li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
   font-style: italic;
   font-weight: 600;
-  font-size: 1.3rem;
-    color: rgba(0, 0, 0, 0.601);
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.601);
+  list-style: none;
+  gap: 10px;
 }
 
-.pris {
-  font-size: 1.5rem;
-  right: 0;
-  margin: 5px;
-  padding: 0;
-   
+.bi-globe,
+.bi-lightning-fill,
+.bi-shield-shaded,
+.bi-emoji-smile {
+  font-size: 3rem;
+}
+
+.accordion-button {
+  border: rgba(0, 0, 0, 0.444) groove;
 }
 
 .accordion-body a {
-  position: relative;
-  display: block;
-  padding: 0px;
-  margin: auto;
-  display: block;
+  font-size: 1rem;
+  display: flex;
+  padding: 0;
+  margin: 0;
   color: rgb(85, 80, 70);
+  background-color: white;
   text-decoration: none;
 }
 
-ul {
-    list-style-type: none;
+.accordion-body h2 {
+  display: none;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer-flex-container {
+  border-color: rgb(138, 174, 175);
+  border: groove;
+  font-size: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+.accordion-footer {
+  font-size: 15px;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 2.2rem;
+  }
+
+  header {
+    font-size: 2rem;
+    padding: 10px;
+    display: flex;
+  }
+
+  .logo-search-icon {
+    display: flex;
+    gap: 20px;
+  }
+
+  .search-icons {
+    margin-top: 2.6rem;
+    flex-grow: 1;
+    height: 90%;
+  }
+
+  .searchbar {
+    width: 90%;
+  }
+
+  .heart-basket {
+    display: flex;
+    gap: 10px;
+    margin-left: 50px;
+  }
+
+  .logotype {
+    max-width: 200px;
+  }
+
+  .navigation-list {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+  }
+
+  .hero-container {
+    width: 100%;
+    margin: 0;
+    margin-right: 15px;
+  }
+
+  #hero {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: top center;
+  }
+
+  .hero-text {
+    font-size: 2rem;
+  }
+
+  .product-card-container {
+    margin-right: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .clothing-images {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+
+  .clothing-images img {
+    margin-bottom: 30px;
+    border-radius: 10%;
+  }
+
+  .btn-outline-light {
+    width: 100%;
+    display: flex;
+    height: 50px;
+    max-width: 6rem;
+    font-size: 1.8rem;
+    top: 6rem;
+    right: 19rem;
+  }
+
+  .overlay-icon,
+  .t-heart {
+    bottom: 250px;
+    left: 130px;
+  }
+
+  .price {
+    color: rgb(0, 0, 0);
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .image-description {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    right: 100px;
+  }
+
+  .shipping-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 17%;
+    margin-right: 10%;
+  }
+
+  .shipping-icons li {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+
+  .bi-globe,
+  .bi-lightning-fill,
+  .bi-shield-shaded,
+  .bi-emoji-smile {
+    font-size: 3rem;
+  }
+
+  .accordion {
+    display: none;
+  }
+
+  .footer-flex-container {
+    margin-left: 3px;
+    background-color: rgba(128, 128, 128, 0.42);
+  }
+  .footer-flex-container p {
+    font-size: 15px;
+  }
+
+  .accordion-footer {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: start;
+  }
+
+  .accordion-footer {
+    justify-content: flex-start;
+    gap: 50px;
+    color: black;
+    margin-top: 20px;
+  }
+
+  .accordion-footer a {
+    display: flex;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+
+  .spots {
+    display: none;
+  }
+
+  @media (min-width: 1024px) {
+    .searchbar {
+      margin-right: 300px;
+    }
+
+    .hero-container {
+      width: 100%;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-evenly;
+    }
+
+    #hero {
+      max-width: 500px;
+      height: 350px;
+      width: 100%;
+    }
+
+    .hero-text {
+      font-size: 1.5rem;
+      margin-bottom: 13rem;
+    }
+    .header-hero {
+      font-size: 3rem;
+    }
+
+    .arrow-line {
+      display: none;
+    }
+
+    .spots {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .spots img {
+      margin-top: 20px;
+      width: 95%;
+      object-fit: cover;
+      height: 250px;
+      border: black solid 2px;
+      margin-right: 4rem;
+
+    }
+
+    .spot1-text,
+    .spot2-text,
+    .spot3-text {
+      position: absolute;
+      border: rgb(178, 153, 153) groove 5px;
+      border-radius: 50%;
+      color: rgb(138, 174, 175);
+      font-size: 3rem;
+      background-color: rgba(178, 153, 153, 0.358);
+      text-align: center;
+      font-family: Garamond, serif;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+      font-style: oblique;
+      
+    }
+
+    .spot1-text {
+      bottom: 120px;
+      margin-left: 50px;
+    }
+
+    .spot2-text {
+      bottom: 120px;
+      margin-left: 40px;
+    }
+
+    .spot3-text {
+      bottom: 120px;
+      margin-left: 65px;
+    }
+
+    .product-card-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: space-between;
+    }
+
+    .clothing-images {
+      display: flex;
+    }
+
+    .image-description {
+      font-size: 15px;
+    }
+
+    .t-heart,
+    .overlay-icon {
+      bottom: 170px;
+      font-size: 2rem;
+    }
+
+    .btn-outline-light {
+      width: 100%;
+      width: 60px;
+      height: 35px;
+      display: flex;
+      position: absolute;
+      font-size: 1rem;
+      top: 47rem;
+      left: 1rem;
+    }
+
+    .t-heart,
+    .overlay-icon {
+      position: relative;
+      left: 6rem;
+      bottom: 13rem;
+    }
+
+    .price {
+      position: relative;
+      left: 5rem;
+      bottom: 12rem;
+      font-size: 1rem;
+    }
+
+    .image-description {
+      bottom: 3rem;
+      right: 3rem;
+    }
+
+    .image-description h3 {
+      font-size: 1.3rem;
+    }
+
+    .shipping-icons {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin: 0;
+      padding: 0 50px 0 50px;
+    }
+
+    .shipping-icons li {
+      align-items: center;
+      font-size: 1rem;
+    }
+
+    .accordion-footer {
+      font-size: 1rem;
+      padding: 20px;
+      margin-bottom: 50px;
+    }
+
+    .bi-globe,
+    .bi-lightning-fill,
+    .bi-shield-shaded,
+    .bi-emoji-smile {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media (min-width: 1280px) {
+      .btn-outline-light {
+        position: absolute;
+        top: 47rem;
+      }
+
+      .spots {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .price {
+        position: relative;
+        left: 6rem;
+      }
+
+      .t-heart, .overlay-icon {
+        position: relative;
+      }
+
+      .image-description {
+        position: relative;
+        right: 5rem;
+      }
 
 
-@media (min-width: 640px) {
-  
-
-
-} 
-
-@media (min-width: 1024px) {
-
-
+    }
+  }
 }

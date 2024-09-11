@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marcus Jönsson">
+    <meta
+      name="description"
+      content="Contains the product details">
+
+    <!--JS Bootstrap-->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+
+    <!--CSS Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous">
+
+    <!--Boostrap ikoner-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+      rel="stylesheet">
+    <!--Min main-CSS-->
+    <link rel="stylesheet" href="productdetails.css" type="text/css">
+    <title>Freaky Fashion</title>
+    <link rel="icon" href="Bilder/ikon.jpg" type="image/x-ikon">
+    
+  </head>
+
+  <body>
+    <header>
+        <div class="logo-search-icon">
+          <div class="logotype">
+            <img src="Bilder/logotyp600.png" alt="logotyp för freaky fashion">
+          </div>
+            <div class="searchbar">
+              <button class="search-button"><i class="bi bi-search-heart"></i></button>
+              <input type="text" placeholder=" Sök produkt" id="search-input"><a href="#"><i class="bi bi-suit-heart-fill"></i></a><a href="#"><i class="bi bi-basket2-fill"></i></a>
+            </div>
+        </div>
+
+      <div class="flex-list">
+        <nav>
+          <ul class="navigation-list">
+            <li>
+              <a href="#">Nyheter <i class="bi bi-arrow-left"></i></a>
+            </li>
+
+            <li>
+              <a href="#">Topplistan <i class="bi bi-list-stars"></i></a>
+            </li>
+
+            <li>
+              <a href="#">Rea <i class="bi bi-cash-coin"></i></a>
+            </li>
+
+            <li>
+              <a href="#"
+                >Kampanjer <i class="bi bi-exclamation-lg"></i
+                ><i class="bi bi-exclamation-lg"></i
+                ><i class="bi bi-exclamation-lg"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+        <img src="Bilder/tshirt1.png" alt="t-shirt nummer 1"><i class="bi bi-heart-fill overlay-icon"></i>
+        <div class="image-description">
+         <h3 class="image-description">Svart T-Shirt</h3><i>Freaky shirts</i><p>Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex</p><p>199,00 KR</p>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" type="button">Button</button>
+          </div>
+          <ul class="shipping-icons">
+            <li><i class="bi bi-globe"></i> Gratis frakt och returer</li>
+            <li><i class="bi bi-lightning-fill"></i> Expressfrakt</li>
+            <li><i class="bi bi-shield-shaded"></i> Säkra betalningar</li>
+            <li><i class="bi bi-emoji-smile"></i> Nyheter varje dag</li>
+          </ul>
+        </main>
+    
+        <footer>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne">
+                  Shopping
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <nav class="accordion-list">
+                    <ul>
+                      <li>
+                        <h2>Shopping</h2>
+                        <a href="#">Vinterjackor</a>
+                        <a href="#">Pufferjackor</a>
+                        <a href="#">Kappa</a>
+                        <a href="#">Trenchcoats</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    Mina Sidor
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <nav>
+                      <ul>
+                        <li>
+                          <h2>Mina Sidor</h2>
+                          <a href="#">Mina Ordrar</a>
+                          <a href="#">Mitt Konto</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree">
+                    Kundtjänst
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <nav>
+                      <ul>
+                        <li>
+                          <h2>Kundtjänst</h2>
+                          <a href="#">Returnpolicy</a>
+                          <a href="#">Integritetspolicy</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+    
+          <div class="footer-flex-container">
+            <div class="accordion-footer">
+              <nav>
+              <ul>
+               <li>
+                 <h2>Shopping</h2>
+                 <a href="#">Vinterjackor</a>
+                 <a href="#">Pufferjackor</a>
+                 <a href="#">Kappa</a>
+                 <a href="#">Trenchcoats</a>
+              </li>
+              </ul>
+              </nav>
+              <nav>
+                <ul>
+                  <li>
+                    <h2>Mina Sidor</h2>
+                    <a href="#">Mina Ordrar</a>
+                    <a href="#">Mitt Konto</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav>
+              <ul>
+                <li>
+                  <h2>Kundtjänst</h2>
+                  <a href="#">Returnpolicy</a>
+                  <a href="#">Integritetspolicy</a>
+                </li>
+              </ul>
+            </nav>
+            </div>
+            <p class="copyright-text">&copy; 2024 Freaky Fashion.</p>
+          </div>
+        </footer>
+      </body>
+    
+
+</html>

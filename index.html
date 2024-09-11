@@ -37,261 +37,297 @@
 
   <body>
     <header>
-      <div class="logotyp"><img src="Bilder/logotyp600.png" alt="logotyp för freaky fashion">
-      </div>
-        
-  
-      <div class="sök">
-        <!--Sökbar som ger användaren möjlighet att söka på produkter-->
-        <div class="sökbar">
-             
-          
-         <button><i class="bi bi-search-heart"></i></button><input type="text" placeholder="Sök produkt" id="sökinput">
-          
-        
-        </div>
-           <a href="#" class="hjärta-röd"><i class="bi bi-suit-heart-fill"></i></a>
-           
-               
-          <a href="#" class="kundkorg"><i class="bi bi-basket2-fill"></i></a>
-        
+      <div class="logotype-searchbar-container">
+        <div class="logo-search-icon">
+          <div class="logotype">
+            <img src="Bilder/logotyp600.png" alt="logotyp för freaky fashion">
+          </div>
+
+          <div class="search-icons">
+            <div class="searchbar">
+              <button class="search-button">
+                <i class="bi bi-search-heart"></i>
+              </button>
+
+              <input type="text" placeholder=" Sök produkt" id="search-input">
             </div>
+            <div class="heart-basket">
+              <a href="#"><i class="bi bi-suit-heart-fill"></i></a
+              ><a href="#"><i class="bi bi-basket2-fill"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!--Lista som navigerar runt användaren på sidan.-->
-      <div class="navigerings-lista">
+      <div class="flex-list">
         <nav>
-        <ul>
-          <li>
-            <a href="#"
-              >Nyheter <i class="bi bi-arrow-left"></i>
-              </a>
-          </li>
+          <ul class="navigation-list">
+            <li>
+              <a href="#">Nyheter <i class="bi bi-arrow-left"></i> </a>
+            </li>
 
-          <li>
-            <a href="#"
-              >Topplistan <i class="bi bi-list-stars"></i>
-              </a>
-          </li>
+            <li>
+              <a href="#">Topplistan <i class="bi bi-list-stars"></i> </a>
+            </li>
 
-          <li>
-            <a href="#"
-              >Rea <i class="bi bi-cash-coin"></i>
-              </a>
-          </li>
+            <li>
+              <a href="#">Rea <i class="bi bi-cash-coin"></i> </a>
+            </li>
 
-          <li>
-            <a href="#"
-              >Kampanjer <i class="bi bi-exclamation-lg"></i><i class="bi bi-exclamation-lg"></i><i class="bi bi-exclamation-lg"></i>
+            <li>
+              <a href="#"
+                >Kampanjer <i class="bi bi-exclamation-lg"></i
+                ><i class="bi bi-exclamation-lg"></i
+                ><i class="bi bi-exclamation-lg"></i>
               </a>
-          </li>
-        </ul>
-      </nav></div>
-      
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-
-      <div class="bilder">
-        <div class="bilder-plagg">
-          <!--Hero bild samt text som önskar användaren välkommen-->
-          <div class="hero-container">
-            
-            <img src="Bilder/document.png" alt="Hero" id="hero">
-            <h1 class="header-hero">Välkommen!</h1>
-            <div class="hero-text">
-              <p class="ai-text"><strong>Kika på vår första AI genererade lansering här.</strong></p>
-            </div>
-          </div>
-          
-           <div class="pil-streck"><i class="bi bi-arrow-bar-down"></i></div>
+      <div class="clothing-images">
+        <div class="hero-container">
+          <img src="Bilder/document.png" alt="Hero" id="hero">
            
-          
-          </div>
+          <div class="hero-text-container"><h1 class="header-hero">Välkommen!</h1><p class="hero-text">Kika på vår första AI genererade lansering här.</p></div>
         </div>
-      
-      <!--En produktlista med olika plagg-->
-        <div class="bilder-plagg">
-          <div class="nyhet"><i class="bi bi-phone-landscape-fill"></i></div>
-          <div class="nyhet-text"><p>Nyhet</p></div>
-          <a href="#"><img src="Bilder/tshirt1.png" alt="t-shirt nummer 1"></a>
-          <div class="beskrivning">
-          
-          <strong>Svart T-Shirt med tryck</strong>
-          <p>Freaky shirts</p></div>
-          <i class="bi bi-heart-fill overlay-icon"></i>
-          <span class="pris"><strong>199 KR</strong></span>
-          
-        </div>
-
-        <div class="bilder-plagg">
-          <img src="Bilder/tshirt2.png" alt="t-shirt nummer 3">
-          <div class="beskrivning">
-          <strong>Svart T-Shirt med tryck</strong>
-            <p>Freaky shirts</p></div>
-          <i class="bi bi-heart t-hjärta"></i>
-          <span class="pris"><strong>199 KR</strong></span>
-        </div>
-
-        <div class="bilder-plagg">
-          <img src="Bilder/tshirt3.png" alt="t-shirt nummer 3">
-          <div class="beskrivning">
-          <strong>Svart T-Shirt med tryck</strong>
-            <p>Freaky shirts</p></div>
-          <i class="bi bi-heart t-hjärta"></i>
-          <span class="pris"><strong>199 KR</strong></span>
-        </div>
-
-        <div class="bilder-plagg">
-          <img src="Bilder/tshirt4.png" alt="t-shirt nummer 4">
-          <div class="beskrivning"><strong>Svart T-Shirt med tryck</strong>
-            <p>Freaky shirts</p></div>
-          <i class="bi bi-heart t-hjärta"></i>
-          <span class="pris"><strong>199 KR</strong></span>
-        </div>
-
-        <div class="bilder-plagg">
-          <img src="Bilder/tshirt5.png" alt="t-shirt nummer 5">
-          <div class="beskrivning"><div class="pris"></div><strong>Beige T-Shirt med tryck</strong>
-            <p>Freaky shirts</p></div>
-          <i class="bi bi-heart t-hjärta"></i>
-          <span class="pris"><strong>199 KR</strong></span>
-        </div>
-
-        <div class="bilder-plagg">
-          <img src="Bilder/tshirt6.png" alt="t-shirt nummer 6">
-          <div class="beskrivning"><div class="pris"></div><strong>Beige T-Shirt med tryck</strong>
-            <p>Freaky shirts</p></div>
-          <i class="bi bi-heart t-hjärta"></i>
-          <span class="pris"><strong>199 KR</strong></span>
-        </div>
-
-        <div class="bilder-plagg">
-          <img src="Bilder/tshirt7.png" alt="t-shirt nummer 7">
-          <div class="beskrivning"><div class="pris"></div><strong>Beige T-Shirt med tryck</strong>
-            <p>Freaky shirts</p></div>
-          <i class="bi bi-heart t-hjärta"></i>
-          <span class="pris"><strong>199 KR</strong></span>
-        </div>
-
-        <div class="bilder-plagg">
-          <img src="Bilder/skor.png" alt="t-shirt nummer 7">
-          <div class="beskrivning"><div class="pris"></div><strong>Beiga skor med svarta detaljer</strong>
-            <p>Freaky shoes</p></div>
-          <i class="bi bi-heart t-hjärta"></i>
-          <span class="pris"><strong>599 KR</strong></span>
-        </div>
-
-        <div class="frakt-ikoner">
-          <ul>
-            <li>
-              <i class="bi bi-globe"></i> Gratis frakt och returer
-            </li>
-            <li>
-              <i class="bi bi-lightning-fill"></i> Expressfrakt
-            </li>
-            <li>
-              <i class="bi bi-shield-shaded"></i> Säkra betalningar
-            </li>
-            <li>
-              <i class="bi bi-emoji-smile"></i> Nyheter varje dag
-            </li>
-          </ul>
-
-          
-
-
-
-        </div>
-          
+        <div class="spots"><a href="#"><img src="Bilder/armband.png" alt="bracelet"><h2 class="spot1-text">Smycken</h2></a><a href="#"><img src="Bilder/shades.png" alt="shades"><h2 class="spot2-text">Glasögon</h2></a><a href="#"><img src="Bilder/keps.png" alt="cap"><h2 class="spot3-text">Kepsar</h2></a></div>
+         
         
-         <!--En accordion med lista över ytterligare produkter och information om sidan-->
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Shopping
-                </button>
-              
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <nav>
-                    <ul>
-                      <li>
-                        
-                        <a href="#">Vinterjackor</a>
-                        <a href="#">Pufferjackor</a>
-                        <a href="#">Kappa</a>
-                        <a href="#">Trenchcoats</a>
-                        
-                      </li>
-                    </ul>
-                  </nav>
-                  
-                
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Mina Sidor
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <nav>
-                    <ul>
-                      <li>
-                        
-                        <a href="#">Mina Ordrar</a>
-                        <a href="#">Mitt Konto</a>
-                        
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Kundtjänst
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <nav>
-                    <ul>
-                      <li>
-                        
-                        <a href="#">Returnpolicy</a>
-                        <a href="#">Integritetspolicy</a>
-                      
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-                
-    
-              </div>
-            </div>
+        <div class="arrow-line"><i class="bi bi-arrow-bar-down"></i></div>
+        <button type="button" class="btn btn-outline-light">Nyhet</button>
+      </div>
+      <div class="product-card-container">
+        <div class="clothing-images">
+          <a href="#"><img src="Bilder/tshirt1.png" alt="t-shirt nummer 1"></a>
+          
+          <div class="image-description">
+            <h3>Svart T-Shirt</h3>
+            <p>Freaky shirts</p>
           </div>
+          <i class="bi bi-heart-fill overlay-icon"></i>
+          <span class="price">199,00 kr</span>
         </div>
 
-      
+        <div class="clothing-images">
+          <img src="Bilder/tshirt2.png" alt="t-shirt nummer 2">
+          <div class="image-description">
+            <h3>Svart T-Shirt</h3>
+            <p>Freaky shirts</p>
+          </div>
+          <i class="bi bi-heart t-heart"></i>
+          <span class="price">199,00 kr</span>
+        </div>
 
-      
+        <div class="clothing-images">
+          <img src="Bilder/tshirt3.png" alt="t-shirt nummer 3">
+          <div class="image-description">
+            <h3>Svart T-Shirt</h3>
+            <p>Freaky shirts</p>
+          </div>
+          <i class="bi bi-heart t-heart"></i>
+          <span class="price">199,00 kr</span>
+        </div>
+
+        <div class="clothing-images">
+          <img src="Bilder/tshirt4.png" alt="t-shirt nummer 4">
+          <div class="image-description">
+            <h3>Svart T-Shirt</h3>
+            <p>Freaky shirts</p>
+          </div>
+          <i class="bi bi-heart t-heart"></i>
+          <span class="price">199,00 kr</span>
+        </div>
+
+        <div class="clothing-images">
+          <img src="Bilder/tshirt5.png" alt="t-shirt nummer 5">
+          <div class="image-description">
+            <h3>Beige T-Shirt</h3>
+            <p>Freaky shirts</p>
+          </div>
+          <i class="bi bi-heart t-heart"></i>
+          <span class="price">199,00 kr</span>
+        </div>
+
+        <div class="clothing-images">
+          <img src="Bilder/tshirt6.png" alt="t-shirt nummer 6">
+          <div class="image-description">
+            <h3>Beige T-Shirt</h3>
+            <p>Freaky shirts</p>
+          </div>
+          <i class="bi bi-heart t-heart"></i>
+          <span class="price">199,00 kr</span>
+        </div>
+
+        <div class="clothing-images">
+          <img src="Bilder/tshirt7.png" alt="t-shirt nummer 7">
+          <div class="image-description">
+            <h3>Beige T-Shirt</h3>
+            <p>Freaky shirts</p>
+          </div>
+          <i class="bi bi-heart t-heart"></i>
+          <span class="price">199,00 kr</span>
+        </div>
+
+        <div class="clothing-images">
+          <img src="Bilder/skor.png" alt="t-shirt nummer 7">
+          <div class="image-description">
+            <h3>Beiga Skor</h3>
+            <p>Freaky shoes</p>
+          </div>
+          <i class="bi bi-heart t-heart"></i>
+          <span class="price">599,00 kr</span>
+        </div>
+      </div>
+
+      <ul class="shipping-icons">
+        <li><i class="bi bi-globe"></i> Gratis frakt och returer</li>
+        <li><i class="bi bi-lightning-fill"></i> Expressfrakt</li>
+        <li><i class="bi bi-shield-shaded"></i> Säkra betalningar</li>
+        <li><i class="bi bi-emoji-smile"></i> Nyheter varje dag</li>
+      </ul>
     </main>
 
-
-
     <footer>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Shopping
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <nav class="accordion-list">
+                <ul>
+                  <li>
+                    <h2>Shopping</h2>
+                    <a href="#">Vinterjackor</a>
+                    <a href="#">Pufferjackor</a>
+                    <a href="#">Kappa</a>
+                    <a href="#">Trenchcoats</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Mina Sidor
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <nav>
+                  <ul>
+                    <li>
+                      <h2>Mina Sidor</h2>
+                      <a href="#">Mina Ordrar</a>
+                      <a href="#">Mitt Konto</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Kundtjänst
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <nav>
+                  <ul>
+                    <li>
+                      <h2>Kundtjänst</h2>
+                      <a href="#">Returnpolicy</a>
+                      <a href="#">Integritetspolicy</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
 
-      <!--Copyright text längst ner på sidan.-->
-      <div class="copyright-text">
-      <p>&copy; 2024 Freaky Fashion.</p>
-       </div>
-
+      <div class="footer-flex-container">
+        
+        <div class="accordion-footer">
+          <nav>
+          <ul>
+           <li>
+             <h2>Shopping</h2>
+             <a href="#">Vinterjackor</a>
+             <a href="#">Pufferjackor</a>
+             <a href="#">Kappa</a>
+             <a href="#">Trenchcoats</a>
+          </li>
+          </ul>
+          </nav>
+          <nav>
+            <ul>
+              <li>
+                <h2>Mina Sidor</h2>
+                <a href="#">Mina Ordrar</a>
+                <a href="#">Mitt Konto</a>
+              </li>
+            </ul>
+          </nav>
+          <nav>
+          <ul>
+            <li>
+              <h2>Kundtjänst</h2>
+              <a href="#">Returnpolicy</a>
+              <a href="#">Integritetspolicy</a>
+              
+            </li>
+          </ul>
+        </nav>
+          
+        </div>
+        <p class="copyright-text">&copy; 2024 Freaky Fashion.</p>
+      </div>
     </footer>
   </body>
 </html>
