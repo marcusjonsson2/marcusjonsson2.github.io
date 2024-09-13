@@ -1,5 +1,4 @@
 body {
-  
   font-size: 2rem;
   width: 100%;
   background-color: rgb(233, 233, 233);
@@ -15,7 +14,6 @@ header {
 }
 
 main {
-  
   display: flex;
   flex-direction: column;
 }
@@ -45,7 +43,7 @@ footer {
 }
 
 .search-icons {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   display: flex;
 }
 
@@ -60,15 +58,16 @@ footer {
 }
 
 .searchbar {
-  width: 80%;
+  width: 74%;
   display: flex;
+  flex-grow: 1;
   border-radius: 15px;
   border: 2px solid rgb(178, 153, 153);
   margin-bottom: 20px;
 }
 
 .heart-basket {
-  margin-left: 20px;
+  height: 40px;
 }
 
 #search-input {
@@ -107,7 +106,7 @@ button i {
 }
 
 .navigation-list a {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-style: italic;
   color: rgb(138, 174, 175);
   text-decoration: none;
@@ -217,10 +216,13 @@ button i {
   animation-duration: 2s;
 }
 @keyframes fade {
-  from {font-size: 3rem}
-  to {font-size: 1rem;}
+  from {
+    font-size: 3rem;
+  }
+  to {
+    font-size: 1rem;
+  }
 }
-
 
 .price {
   color: rgb(163, 162, 164);
@@ -385,8 +387,12 @@ ul {
     animation-duration: 2s;
   }
   @keyframes fade {
-    from {font-size: 3rem}
-    to {font-size: 1rem;}
+    from {
+      font-size: 3rem;
+    }
+    to {
+      font-size: 1rem;
+    }
   }
 
   .price {
@@ -423,7 +429,7 @@ ul {
   }
 
   .accordion {
-    display: none
+    display: none;
   }
 
   .footer-flex-container {
@@ -501,7 +507,6 @@ ul {
       height: 250px;
       border: black solid 2px;
       margin-right: 4rem;
-
     }
 
     .spot1-text,
@@ -518,7 +523,6 @@ ul {
       -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: black;
       font-style: oblique;
-      
     }
 
     .spot1-text {
@@ -540,7 +544,6 @@ ul {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       justify-content: space-evenly;
-      
     }
 
     .clothing-images {
@@ -569,8 +572,12 @@ ul {
       animation-duration: 2s;
     }
     @keyframes fade {
-      from {font-size: 2rem}
-      to {font-size: 1rem;}
+      from {
+        font-size: 2rem;
+      }
+      to {
+        font-size: 1rem;
+      }
     }
 
     .btn-outline-light {
@@ -658,23 +665,25 @@ ul {
         animation-duration: 2s;
       }
       @keyframes fade {
-        from {font-size: 2rem}
-        to {font-size: 1rem;}
+        from {
+          font-size: 2rem;
+        }
+        to {
+          font-size: 1rem;
+        }
       }
 
-      .t-heart, .overlay-icon {
+      .t-heart,
+      .overlay-icon {
         position: relative;
         right: 10rem;
         font-size: 2rem;
-        
       }
 
       .image-description {
         position: relative;
         right: 5rem;
       }
-
-
     }
   }
 }
