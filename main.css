@@ -1,4 +1,5 @@
 body {
+  
   font-size: 2rem;
   width: 100%;
   background-color: rgb(233, 233, 233);
@@ -9,12 +10,12 @@ header {
   display: flex;
   background-color: #cbd3e43d;
   color: rgb(138, 174, 175);
-  font-size: 1.3rem;
   padding: 10px;
   flex-direction: column;
 }
 
 main {
+  
   display: flex;
   flex-direction: column;
 }
@@ -44,9 +45,7 @@ footer {
 }
 
 .search-icons {
-  margin: 0;
-  font-size: 1.5rem;
-  justify-content: flex-end;
+  font-size: 1.3rem;
   display: flex;
 }
 
@@ -64,18 +63,19 @@ footer {
   width: 80%;
   display: flex;
   border-radius: 15px;
-  margin: 0;
-  padding: 0;
   border: 2px solid rgb(178, 153, 153);
   margin-bottom: 20px;
 }
 
+.heart-basket {
+  margin-left: 20px;
+}
+
 #search-input {
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 1rem;
   border: none;
   border-radius: 15px;
-  padding: 0;
   background-color: #cbd3e400;
   color: rgb(178, 153, 153);
 }
@@ -107,6 +107,7 @@ button i {
 }
 
 .navigation-list a {
+  font-size: 1.2rem;
   font-style: italic;
   color: rgb(138, 174, 175);
   text-decoration: none;
@@ -209,6 +210,17 @@ button i {
   padding: 2px;
   cursor: pointer;
 }
+
+.t-heart:hover {
+  border: black solid 2px;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+@keyframes fade {
+  from {font-size: 3rem}
+  to {font-size: 1rem;}
+}
+
 
 .price {
   color: rgb(163, 162, 164);
@@ -331,7 +343,7 @@ ul {
   }
 
   .hero-text {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .product-card-container {
@@ -347,7 +359,7 @@ ul {
   }
 
   .clothing-images img {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     border-radius: 10%;
   }
 
@@ -363,14 +375,24 @@ ul {
 
   .overlay-icon,
   .t-heart {
-    bottom: 250px;
+    bottom: 240px;
     left: 130px;
+  }
+
+  .t-heart:hover {
+    border: black solid 2px;
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  @keyframes fade {
+    from {font-size: 3rem}
+    to {font-size: 1rem;}
   }
 
   .price {
     color: rgb(0, 0, 0);
     display: flex;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
   }
 
@@ -384,13 +406,13 @@ ul {
   .shipping-icons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-left: 17%;
+    margin-left: 19%;
     margin-right: 10%;
   }
 
   .shipping-icons li {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
+    font-size: 1rem;
+    margin-bottom: 10px;
   }
 
   .bi-globe,
@@ -401,7 +423,7 @@ ul {
   }
 
   .accordion {
-    display: none;
+    display: none
   }
 
   .footer-flex-container {
@@ -413,7 +435,7 @@ ul {
   }
 
   .accordion-footer {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     display: flex;
     align-items: start;
   }
@@ -500,38 +522,55 @@ ul {
     }
 
     .spot1-text {
-      bottom: 120px;
-      margin-left: 50px;
+      bottom: 110px;
+      margin-left: 60px;
     }
 
     .spot2-text {
-      bottom: 120px;
-      margin-left: 40px;
+      bottom: 110px;
+      margin-left: 50px;
     }
 
     .spot3-text {
-      bottom: 120px;
-      margin-left: 65px;
+      bottom: 110px;
+      margin-left: 75px;
     }
 
     .product-card-container {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      justify-content: space-between;
+      justify-content: space-evenly;
+      
     }
 
     .clothing-images {
       display: flex;
+      justify-content: space-evenly;
     }
 
     .image-description {
       font-size: 15px;
     }
 
+    .clothing-images img {
+      border: rgb(163, 162, 164) groove 2px;
+      justify-content: space-evenly;
+    }
+
     .t-heart,
     .overlay-icon {
       bottom: 170px;
       font-size: 2rem;
+    }
+
+    .t-heart:hover {
+      border: black solid 2px;
+      animation-name: fade;
+      animation-duration: 2s;
+    }
+    @keyframes fade {
+      from {font-size: 2rem}
+      to {font-size: 1rem;}
     }
 
     .btn-outline-light {
@@ -541,7 +580,7 @@ ul {
       display: flex;
       position: absolute;
       font-size: 1rem;
-      top: 47rem;
+      top: 45rem;
       left: 1rem;
     }
 
@@ -549,18 +588,18 @@ ul {
     .overlay-icon {
       position: relative;
       left: 6rem;
-      bottom: 13rem;
+      bottom: 11.5rem;
     }
 
     .price {
       position: relative;
       left: 5rem;
-      bottom: 12rem;
+      bottom: 10rem;
       font-size: 1rem;
     }
 
     .image-description {
-      bottom: 3rem;
+      bottom: 0.5rem;
       right: 3rem;
     }
 
@@ -579,10 +618,11 @@ ul {
     .shipping-icons li {
       align-items: center;
       font-size: 1rem;
+      margin-bottom: 2rem;
     }
 
     .accordion-footer {
-      font-size: 1rem;
+      font-size: 0.8rem;
       padding: 20px;
       margin-bottom: 50px;
     }
@@ -598,12 +638,12 @@ ul {
     @media (min-width: 1280px) {
       .btn-outline-light {
         position: absolute;
-        top: 47rem;
+        top: 45rem;
       }
 
       .spots {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         width: 100%;
       }
 
@@ -612,8 +652,21 @@ ul {
         left: 6rem;
       }
 
+      .t-heart:hover {
+        border: black solid 2px;
+        animation-name: fade;
+        animation-duration: 2s;
+      }
+      @keyframes fade {
+        from {font-size: 2rem}
+        to {font-size: 1rem;}
+      }
+
       .t-heart, .overlay-icon {
         position: relative;
+        right: 10rem;
+        font-size: 2rem;
+        
       }
 
       .image-description {

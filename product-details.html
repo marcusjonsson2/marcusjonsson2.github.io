@@ -39,10 +39,19 @@
           <div class="logotype">
             <img src="Bilder/logotyp600.png" alt="logotyp för freaky fashion">
           </div>
+
+          <div class="search-icons">
             <div class="searchbar">
-              <button class="search-button"><i class="bi bi-search-heart"></i></button>
-              <input type="text" placeholder=" Sök produkt" id="search-input"><a href="#"><i class="bi bi-suit-heart-fill"></i></a><a href="#"><i class="bi bi-basket2-fill"></i></a>
+              <button class="search-button">
+                <i class="bi bi-search-heart"></i>
+              </button>
+              <input type="text" placeholder=" Sök produkt" id="search-input">
             </div>
+            <div class="heart-basket">
+              <a href="#"><i class="bi bi-suit-heart-fill"></i></a
+              ><a href="#"><i class="bi bi-basket2-fill"></i></a>
+            </div>
+          </div>
         </div>
 
       <div class="flex-list">
@@ -73,17 +82,37 @@
     </header>
 
     <main>
-        <img src="Bilder/tshirt1.png" alt="t-shirt nummer 1"><i class="bi bi-heart-fill overlay-icon"></i>
-        <div class="image-description">
-         <h3 class="image-description">Svart T-Shirt</h3><i>Freaky shirts</i><p>Lorem ipsum dolor sit amet, consectetur
+      <div class="main-flex">
+        <div class="image-and-heart"><img id="black-tshirt" src="Bilder/tshirt1.png" alt="t-shirt nummer 1">
+          <div class="overlay"><i class="bi bi-heart t-heart"></i></div>
+        </div>
+        
+          <div class="description">
+          <h3 class="image-description">Svart T-Shirt</h3><i>Freaky shirts</i>
+          <p>Lorem ipsum dolor sit amet, consectetur
             adipisicing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut
             enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex</p><p>199,00 KR</p>
+            exercitation ullamco laboris nisi ut aliquip ex</p>
+          <p>199,00 kr</p>
+          <div class="d-grid gap-2 col-6 mx-auto"></div>
+            <button class="btn btn-primary" type="button">Lägg i varukorg</button>
         </div>
-        <div class="d-grid gap-2 col-6 mx-auto">
-            <button class="btn btn-primary" type="button">Button</button>
+          
+      </div>
+          <h2 class="product-header">Liknande produkter</h2>
+          <div class="product-tips">
+            <a href="#"><img src="Bilder/rectshirt1.png" alt="Look alike shirt1"></a>
+            <img src="Bilder/rectshirt2.png" alt="look alike shirt2">
+            <img src="Bilder/rectshirt3.png" alt="look alike shirt3">
           </div>
+          <div class="shirt-description">
+            <div class="desc-column"><h3>Svart T-Shirt</h3><p>Freaky Shirts</p></div><span>199,00 kr</span>
+            <div class="desc-column"><h3>Svart T-Shirt</h3><p>Freaky Shirts</p></div><span>199,00 kr</span>
+            <div class="desc-column"><h3>Svart T-Shirt</h3><p>Freaky Shirts</p></div><span>199,00 kr</span>
+          </div>
+          
+
           <ul class="shipping-icons">
             <li><i class="bi bi-globe"></i> Gratis frakt och returer</li>
             <li><i class="bi bi-lightning-fill"></i> Expressfrakt</li>

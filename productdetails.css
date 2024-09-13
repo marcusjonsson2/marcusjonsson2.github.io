@@ -1,0 +1,493 @@
+header {
+  display: flex;
+  background-color: #cbd3e43d;
+  color: rgb(138, 174, 175);
+  font-size: 1rem;
+  padding: 10px;
+  flex-direction: column;
+}
+
+body {
+  background-color: rgb(233, 233, 233);
+}
+
+.main-flex {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(233, 233, 233);
+}
+
+.logotype img {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 3px;
+  margin: 5px;
+}
+
+.search-icons {
+  margin: 0;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bi-suit-heart-fill {
+  padding: 10px;
+  color: rgb(200, 107, 107);
+}
+
+.bi-basket2-fill {
+  color: rgb(97, 86, 86);
+  padding: 0;
+}
+
+.searchbar {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  border-radius: 15px;
+  margin: 0;
+  padding: 0;
+  border: 2px solid rgb(178, 153, 153);
+}
+
+#search-input {
+  width: 100%;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 15px;
+  padding: 0;
+  background-color: #cbd3e400;
+  color: rgb(178, 153, 153);
+}
+
+#search-input::placeholder {
+  color: rgb(178, 153, 153);
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+}
+
+button i {
+  font-size: 1.5rem;
+}
+
+.search-button {
+  margin-left: 10px;
+}
+
+.bi-search-heart {
+  color: rgb(178, 153, 153);
+}
+
+.flex-list ul li {
+  padding: 0;
+  list-style: none;
+  margin-top: 5px;
+}
+
+.navigation-list a {
+  list-style: none;
+  font-style: italic;
+  color: rgb(138, 174, 175);
+  text-decoration: none;
+  text-align: left;
+}
+
+.image-and-heart {
+  position: relative;
+  width: 100%;
+}
+
+#black-tshirt {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.overlay {
+  color: rgb(138, 174, 175);
+  font-size: 2.5rem;
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+}
+
+.description {
+  margin: 10px;
+  font-size: 1rem;
+  padding: 0;
+}
+
+.shirt-description {
+  display: none;
+}
+
+.description i {
+  color: rgb(174, 170, 170);
+}
+
+.description h3 {
+  font-size: 2rem;
+  font-style: oblique;
+}
+
+.description p {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1.3rem;
+  margin-top: 15px;
+}
+
+.description p:nth-of-type(1) {
+  font-weight: 300;
+}
+
+.btn-primary {
+  border-radius: 10px;
+  border-color: rgb(138, 174, 175);
+  font-size: 1.3rem;
+  background-color: rgb(138, 174, 175);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: rgb(0, 0, 0);
+  margin-right: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.shipping-icons {
+  margin-top: 20px;
+}
+
+.shipping-icons li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.601);
+  list-style: none;
+  gap: 10px;
+}
+
+.bi-globe,
+.bi-lightning-fill,
+.bi-shield-shaded,
+.bi-emoji-smile {
+  font-size: 2rem;
+}
+
+.accordion-button {
+  border: rgba(0, 0, 0, 0.444) groove;
+}
+
+.accordion-body a {
+  font-size: 1rem;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  color: rgb(85, 80, 70);
+  background-color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer-flex-container {
+  border-color: rgb(138, 174, 175);
+  border: groove;
+  font-size: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+.accordion-footer {
+  font-size: 15px;
+  display: none;
+}
+
+.product-header,
+.product-tips {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  header {
+    font-size: 2rem;
+    padding: 10px;
+  }
+
+  .flex-list ul {
+    gap: 10px;
+  }
+
+  .logo-search-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .search-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 1.3rem;
+  }
+
+  .searchbar {
+    margin-right: 150px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    width: 60%;
+  }
+
+  .t-heart {
+    display: none;
+  }
+
+  .logotype img {
+    padding: 15px;
+    margin-top: 10px;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+  }
+
+  .navigation-list {
+    margin-bottom: 50px;
+    margin-top: 0;
+    font-size: 1rem;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+  }
+
+  .main-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 100px;
+  }
+
+  #black-tshirt {
+    width: 100%;
+    height: auto;
+  }
+
+  .btn-primary {
+    font-size: 1.2rem;
+    margin-left: 0;
+    width: 35%;
+  }
+  .btn-primary:active {
+    color: rgb(138, 174, 175);
+  }
+
+  .description {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .product-header {
+    font-style: italic;
+    font-family: Georgia, serif;
+    color: rgb(138, 174, 175);
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .product-header {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .product-tips {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .product-tips img {
+    border: groove rgb(174, 170, 170);
+    border-radius: 50px;
+    height: auto;
+    object-fit: contain;
+    max-width: 255px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .shirt-description {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+  }
+
+  .shirt-description > span {
+    font-weight: 600;
+  }
+
+  .desc-column > h3 {
+    font-size: 1.3rem;
+  }
+
+  .desc-column > p {
+    font-size: 0.8rem;
+    color: gray;
+  }
+
+  .shipping-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 17%;
+    margin-right: 10%;
+  }
+
+  .shipping-icons li {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    margin: 0;
+  }
+
+  .bi-globe,
+  .bi-lightning-fill,
+  .bi-shield-shaded,
+  .bi-emoji-smile {
+    font-size: 2.5rem;
+  }
+
+  .accordion {
+    display: none;
+  }
+
+  .footer-flex-container {
+    margin-left: 3px;
+    background-color: rgba(128, 128, 128, 0.42);
+  }
+  .footer-flex-container p {
+    font-size: 15px;
+  }
+
+  .accordion-footer {
+    font-size: 1rem;
+    display: flex;
+    align-items: start;
+  }
+
+  .accordion-footer > nav > ul > li > h2 {
+    font-size: 1.2rem;
+  }
+
+  .accordion-footer {
+    justify-content: flex-start;
+    gap: 50px;
+    color: black;
+    margin-top: 20px;
+  }
+
+  .accordion-footer a {
+    display: flex;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .searchbar {
+    flex-grow: 0;
+    width: 40%;
+    margin-left: 20px;
+  }
+
+  .navigation-list {
+    margin-bottom: 50px;
+    margin-top: 0;
+  }
+
+  .description > p:nth-last-of-type(2) {
+    font-size: 1rem;
+  }
+
+  .product-tips {
+    justify-content: space-evenly;
+  }
+
+  .shirt-description {
+    justify-content: space-around;
+  }
+
+  .product-tips img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .shipping-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0 50px 0 50px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .shipping-icons li {
+    align-items: center;
+    font-size: 1rem;
+  }
+
+  .accordion-footer {
+    font-size: 1rem;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+
+  .bi-globe,
+  .bi-lightning-fill,
+  .bi-shield-shaded,
+  .bi-emoji-smile {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1280px) {
+
+  #black-tshirt{
+    margin: 0 0 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    height: 750px;
+    
+  }
+
+  .product-tips {
+    justify-content: space-around;
+  }
+
+  
+}
