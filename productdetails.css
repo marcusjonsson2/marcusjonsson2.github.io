@@ -435,10 +435,6 @@ ul {
     justify-content: space-evenly;
   }
 
-  .shirt-description {
-    justify-content: space-around;
-  }
-
   .product-tips img {
     width: 100%;
     max-width: 300px;
@@ -474,20 +470,28 @@ ul {
   }
 }
 @media (min-width: 1280px) {
-
-  #black-tshirt{
-    margin: 0 0 0 50px;
-    display: flex;
-    justify-content: center;
+  #black-tshirt {
+    margin: 0;
     align-items: center;
+    justify-content: center;
     max-width: 500px;
+    width: 100%;
     height: 750px;
-    
+  }
+
+  .main-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 100px;
+    padding: 150px;
+  }
+
+  .description {
+    justify-content: flex-start;
   }
 
   .product-tips {
     justify-content: space-around;
   }
-
-  
 }

@@ -71,6 +71,7 @@ footer {
 }
 
 #search-input {
+  outline: none;
   width: 100%;
   font-size: 1rem;
   border: none;
@@ -155,7 +156,7 @@ button i {
   color: rgb(138, 174, 175);
 }
 
-.btn-outline-light {
+.new-badge {
   color: rgb(255, 255, 255);
   background-color: rgb(138, 174, 175);
   position: relative;
@@ -211,7 +212,6 @@ button i {
 }
 
 .t-heart:hover {
-  border: black solid 2px;
   animation-name: fade;
   animation-duration: 2s;
 }
@@ -220,7 +220,7 @@ button i {
     font-size: 3rem;
   }
   to {
-    font-size: 1rem;
+    font-size: 0rem;
   }
 }
 
@@ -365,12 +365,12 @@ ul {
     border-radius: 10%;
   }
 
-  .btn-outline-light {
+  .new-badge {
     width: 100%;
     display: flex;
     height: 50px;
     max-width: 6rem;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     top: 6rem;
     right: 19rem;
   }
@@ -382,7 +382,6 @@ ul {
   }
 
   .t-heart:hover {
-    border: black solid 2px;
     animation-name: fade;
     animation-duration: 2s;
   }
@@ -391,7 +390,7 @@ ul {
       font-size: 3rem;
     }
     to {
-      font-size: 1rem;
+      font-size: 0rem;
     }
   }
 
@@ -567,7 +566,6 @@ ul {
     }
 
     .t-heart:hover {
-      border: black solid 2px;
       animation-name: fade;
       animation-duration: 2s;
     }
@@ -576,17 +574,17 @@ ul {
         font-size: 2rem;
       }
       to {
-        font-size: 1rem;
+        font-size: 0rem;
       }
     }
 
-    .btn-outline-light {
+    .new-badge {
       width: 100%;
       width: 60px;
       height: 35px;
       display: flex;
       position: absolute;
-      font-size: 1rem;
+      font-size: 1.2rem;
       top: 45rem;
       left: 1rem;
     }
@@ -643,8 +641,21 @@ ul {
     }
 
     @media (min-width: 1280px) {
-      .btn-outline-light {
+      .searchbar {
+        width: 100%;
+      }
+
+      .hero-container {
+        width: 80%;
+      }
+
+      .heart-basket {
+        justify-content: flex-end;
+      }
+
+      .new-badge {
         position: absolute;
+        left: 4rem;
         top: 45rem;
       }
 
@@ -660,23 +671,23 @@ ul {
       }
 
       .t-heart:hover {
-        border: black solid 2px;
         animation-name: fade;
-        animation-duration: 2s;
+        animation-duration: 5s;
       }
       @keyframes fade {
         from {
           font-size: 2rem;
         }
         to {
-          font-size: 1rem;
+          font-size: 0rem;
         }
       }
 
       .t-heart,
       .overlay-icon {
+        bottom: 12rem;
+        left: 9rem;
         position: relative;
-        right: 10rem;
         font-size: 2rem;
       }
 
