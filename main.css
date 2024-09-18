@@ -306,11 +306,12 @@ ul {
   .search-icons {
     margin-top: 2.6rem;
     flex-grow: 1;
-    height: 90%;
+    height: 100%;
   }
 
   .searchbar {
-    width: 90%;
+    width: 100%;
+    height: auto;
   }
 
   .heart-basket {
@@ -320,7 +321,9 @@ ul {
   }
 
   .logotype {
-    max-width: 200px;
+    width: 100%;
+    height: auto;
+    max-width: 250px;
   }
 
   .navigation-list {
@@ -642,15 +645,11 @@ ul {
 
     @media (min-width: 1280px) {
       .searchbar {
-        width: 100%;
+        margin-right: 30rem;
       }
 
       .hero-container {
         width: 80%;
-      }
-
-      .heart-basket {
-        justify-content: flex-end;
       }
 
       .new-badge {
