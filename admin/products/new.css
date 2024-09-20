@@ -44,6 +44,11 @@ main {
   margin: 15px 0 15px;
 }
 
+#choose-file {
+  border: groove rgba(0, 0, 0, 0.623) 1px;
+  padding: 2px;
+}
+
 .btn-primary {
   width: 130px;
   margin-top: 20px;
