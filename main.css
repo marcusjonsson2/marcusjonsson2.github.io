@@ -220,7 +220,7 @@ button i {
     font-size: 3rem;
   }
   to {
-    font-size: 0rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -373,7 +373,7 @@ ul {
     display: flex;
     height: 50px;
     max-width: 6rem;
-    font-size: 1.9rem;
+    font-size: 2rem;
     top: 6rem;
     right: 19rem;
   }
@@ -393,7 +393,7 @@ ul {
       font-size: 3rem;
     }
     to {
-      font-size: 0rem;
+      font-size: 3.5rem;
     }
   }
 
@@ -577,7 +577,7 @@ ul {
         font-size: 2rem;
       }
       to {
-        font-size: 0rem;
+        font-size: 2.5rem;
       }
     }
 
@@ -678,7 +678,7 @@ ul {
           font-size: 2rem;
         }
         to {
-          font-size: 0rem;
+          font-size: 2.5rem;
         }
       }
 
