@@ -1,0 +1,267 @@
+main {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgb(138, 174, 175);
+}
+.customer-data {
+  margin-top: 30px;
+  text-align: center;
+  color: rgb(138, 174, 175);
+}
+.grid-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+@keyframes zoom {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.input-bottom:hover,
+.input-top:hover {
+  filter: drop-shadow(0 -6mm 4mm rgba(0, 0, 0, 0.579));
+  animation: zoom 1s infinite alternate;
+}
+
+.input-top,
+.input-bottom {
+  height: auto;
+  width: 100%;
+  border: rgb(0, 0, 0) groove 2px;
+}
+
+.input-top tr > td:nth-child(1),
+.input-bottom tr > td:nth-child(1) {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.input-top tr > td:nth-child(3),
+.input-bottom tr > td:nth-child(3) {
+  color: rgb(134, 134, 134);
+  padding: 10px;
+}
+.input-top tr > td:nth-child(2),
+.input-bottom tr > td:nth-child(2) {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 10px;
+  text-align: right;
+}
+fieldset {
+  margin-bottom: 1em !important;
+  border: 2px solid #666 !important;
+  padding: 15px !important;
+}
+#street,
+#city {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+legend {
+  padding: 1px 10px !important;
+  float: none;
+  width: auto;
+}
+#name,
+#lastname,
+#email {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-color: rgb(178, 153, 153);
+}
+label {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.buy-button {
+  display: flex;
+  justify-content: center;
+  width: 100%s;
+  margin: 20px;
+}
+.btn-primary {
+  border-color: rgb(138, 174, 175);
+  background-color: rgb(138, 174, 175);
+  width: 150px;
+  filter: drop-shadow(0 0mm 2mm rgba(0, 0, 0, 0.579));
+}
+.btn-primary:hover {
+  background-color: rgb(178, 153, 153);
+}
+header {
+  display: flex;
+  background-color: #cbd3e43d;
+  color: rgb(138, 174, 175);
+  padding: 10px;
+  flex-direction: column;
+}
+.logotype img {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 3px;
+  margin: 5px;
+}
+.search-icons {
+  font-size: 1.5rem;
+  display: flex;
+}
+
+.bi-suit-heart-fill {
+  padding: 3px;
+  color: rgb(200, 107, 107);
+}
+
+.bi-basket2-fill {
+  color: rgb(97, 86, 86);
+  padding: 0;
+}
+
+.searchbar {
+  width: 74%;
+  display: flex;
+  flex-grow: 1;
+  border-radius: 15px;
+  border: 2px solid rgb(178, 153, 153);
+  margin-bottom: 20px;
+}
+
+.heart-basket {
+  height: 40px;
+}
+
+#search-input {
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+  border-radius: 15px;
+  background-color: #cbd3e400;
+  color: rgb(178, 153, 153);
+}
+
+#search-input::placeholder {
+  color: rgb(178, 153, 153);
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+}
+
+button i {
+  font-size: 1.6rem;
+}
+
+.search-button {
+  margin-left: 10px;
+}
+
+.bi-search-heart {
+  color: rgb(178, 153, 153);
+}
+
+.navigation-list a {
+  font-size: 1rem;
+  font-style: italic;
+  color: rgb(138, 174, 175);
+  text-decoration: none;
+  text-align: left;
+}
+.shipping-icons li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.601);
+  list-style: none;
+  gap: 10px;
+}
+
+.bi-globe,
+.bi-lightning-fill,
+.bi-shield-shaded,
+.bi-emoji-smile {
+  font-size: 2rem;
+}
+
+.accordion-button {
+  border: rgba(0, 0, 0, 0.444) groove;
+}
+
+.accordion-body a {
+  font-size: 1rem;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  color: rgb(85, 80, 70);
+  background-color: white;
+  text-decoration: none;
+}
+
+.accordion-body h2 {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer-flex-container {
+  border-color: rgb(138, 174, 175);
+  border: groove;
+  font-size: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+.accordion-footer {
+  font-size: 15px;
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .shipping-icons {
+    display: none;
+  }
+  .form-flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+  }
+  .form-flex-container div {
+    width: 100%;
+  }
+
+  #email {
+    width: 50%;
+  }
+}

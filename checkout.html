@@ -32,7 +32,7 @@
     />
 
     <!--Min main-CSS-->
-    <link rel="stylesheet" href="main.css" type="text/css" />
+    <link rel="stylesheet" href="checkout.css" type="text/css" />
 
     <title>Freaky Fashion</title>
     <link rel="icon" href="Bilder/ikon.jpg" type="image/x-ikon" />
@@ -89,122 +89,52 @@
         </nav>
       </div>
     </header>
-
     <main>
-      <div class="clothing-images">
-        <div class="hero-container">
-          <img src="Bilder/document.png" alt="Hero" id="hero" />
-
-          <div class="hero-text-container">
-            <h1 class="header-hero">Välkommen!</h1>
-            <p class="hero-text">
-              Kika på vår första AI genererade lansering här.
-            </p>
-          </div>
+      <article>
+        <div class="checkout-header">
+          <h1>Kassan</h1>
         </div>
-        <div class="spots">
-          <a href="#"
-            ><img src="Bilder/armband.png" alt="bracelet" />
-            <h2 class="spot1-text">Smycken</h2></a
-          ><a href="#"
-            ><img src="Bilder/shades.png" alt="shades" />
-            <h2 class="spot2-text">Glasögon</h2></a
-          ><a href="#"
-            ><img src="Bilder/keps.png" alt="cap" />
-            <h2 class="spot3-text">Kepsar</h2></a
-          >
-        </div>
-
-        <div class="arrow-line"><i class="bi bi-arrow-bar-down"></i></div>
-        <div class="new-badge">
-          <span>Nyhet</span>
-        </div>
+        <table class="input-top">
+          <tr class="grid-table">
+            <td>1 x Svart T-Shirt</td>
+            <td>199 SEK</td>
+            <td>199 SEK</td>
+          </tr>
+        </table>
+        <table class="input-bottom">
+          <tr class="grid-table">
+            <td>2 x Beige T-Shirt</td>
+            <td>398 SEK</td>
+            <td>199 SEK</td>
+          </tr>
+        </table>
+      </article>
+      <div class="customer-data"><h2>Kunduppgifter</h2></div>
+      <form class="order-data">
+        <section class="form-flex-container">
+        <div><label for="name">Förnamn</label><br />
+        <input type="text" name="name" id="name" /><br />
       </div>
-      <div class="product-card-container">
-        <div class="clothing-images">
-          <a href="product-details.html"
-            ><img src="Bilder/tshirt1.png" alt="t-shirt nummer 1"
-          /></a>
-
-          <div class="image-description">
-            <h3>Svart T-Shirt</h3>
-            <p>Freaky shirts</p>
-          </div>
-          <a href="#"></a><i class="bi bi-heart-fill overlay-icon"></i>
-          <span class="price">199,00 kr</span>
-        </div>
-
-        <div class="clothing-images">
-          <img src="Bilder/tshirt2.png" alt="t-shirt nummer 2" />
-          <div class="image-description">
-            <h3>Svart T-Shirt</h3>
-            <p>Freaky shirts</p>
-          </div>
-          <i class="bi bi-heart t-heart"></i>
-          <span class="price">199,00 kr</span>
-        </div>
-
-        <div class="clothing-images">
-          <img src="Bilder/tshirt3.png" alt="t-shirt nummer 3" />
-          <div class="image-description">
-            <h3>Svart T-Shirt</h3>
-            <p>Freaky shirts</p>
-          </div>
-          <i class="bi bi-heart t-heart"></i>
-          <span class="price">199,00 kr</span>
-        </div>
-
-        <div class="clothing-images">
-          <img src="Bilder/tshirt4.png" alt="t-shirt nummer 4" />
-          <div class="image-description">
-            <h3>Svart T-Shirt</h3>
-            <p>Freaky shirts</p>
-          </div>
-          <i class="bi bi-heart t-heart"></i>
-          <span class="price">199,00 kr</span>
-        </div>
-
-        <div class="clothing-images">
-          <img src="Bilder/tshirt5.png" alt="t-shirt nummer 5" />
-          <div class="image-description">
-            <h3>Beige T-Shirt</h3>
-            <p>Freaky shirts</p>
-          </div>
-          <i class="bi bi-heart t-heart"></i>
-          <span class="price">199,00 kr</span>
-        </div>
-
-        <div class="clothing-images">
-          <img src="Bilder/tshirt6.png" alt="t-shirt nummer 6" />
-          <div class="image-description">
-            <h3>Beige T-Shirt</h3>
-            <p>Freaky shirts</p>
-          </div>
-          <i class="bi bi-heart t-heart"></i>
-          <span class="price">199,00 kr</span>
-        </div>
-
-        <div class="clothing-images">
-          <img src="Bilder/tshirt7.png" alt="t-shirt nummer 7" />
-          <div class="image-description">
-            <h3>Beige T-Shirt</h3>
-            <p>Freaky shirts</p>
-          </div>
-          <i class="bi bi-heart t-heart"></i>
-          <span class="price">199,00 kr</span>
-        </div>
-
-        <div class="clothing-images">
-          <img src="Bilder/skor.png" alt="t-shirt nummer 7" />
-          <div class="image-description">
-            <h3>Beiga Skor</h3>
-            <p>Freaky shoes</p>
-          </div>
-          <i class="bi bi-heart t-heart"></i>
-          <span class="price">599,00 kr</span>
-        </div>
+        <div><label for="lastname">Efternamn</label><br />
+        <input type="text" name="lastname" id="lastname" /><br />
       </div>
-
+        </section>
+        <label for="email">E-post</label><br />
+        <input type="email" name="email" id="email" /><br />
+        <fieldset>
+          <legend>Adress</legend>
+          <label for="street">Gata</label><br />
+          <input type="text" id="street" name="street" /><br />
+          <label for="zipcode">Postnummer</label><br />
+          <input type="number" id="zipcode" name="zipcode" /><br />
+          <label for="city">Stad</label><br />
+          <input type="text" id="city" name="city" /><br />
+        </fieldset>
+        </form>
+        <input type="radio" name="news-letter" id="news-letter" />
+          <label for="news-letter">Jag vill ta emot nyhetsbrev</label><br>
+      
+      <div class="buy-button"><button type="button" class="btn btn-primary">Köp</button></div>
       <ul class="shipping-icons">
         <li><i class="bi bi-globe"></i> Gratis frakt och returer</li>
         <li><i class="bi bi-lightning-fill"></i> Expressfrakt</li>
