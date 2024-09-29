@@ -16,6 +16,9 @@ h1 {
   text-align: center;
   color: rgb(138, 174, 175);
 }
+.checkout-table {
+  display: none;
+}
 .grid-table {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -123,7 +126,7 @@ header {
   margin: 5px;
 }
 .search-icons {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   display: flex;
 }
 
@@ -175,7 +178,7 @@ button {
 }
 
 button i {
-  font-size: 1.6rem;
+  font-size: 1rem;
 }
 
 .search-button {
@@ -248,6 +251,45 @@ ul {
 }
 
 @media (min-width: 640px) {
+  main {
+    padding: 30px;
+  }
+  header {
+    font-size: 2rem;
+    padding: 10px;
+  }
+
+  .logo-search-icon {
+    display: flex;
+    gap: 20px;
+  }
+
+  .search-icons {
+    margin-top: 2.6rem;
+    height: 100%;
+    display: flex;
+    width: 100%;
+    gap: 5rem;
+  }
+
+  .heart-basket {
+    display: flex;
+    gap: 10px;
+  }
+
+  .logotype {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+  }
+
+  .navigation-list {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+  }
   .shipping-icons {
     display: none;
   }
@@ -257,11 +299,67 @@ ul {
     gap: 10px;
     width: 100%;
   }
+
   .form-flex-container div {
     width: 100%;
   }
 
   #email {
     width: 50%;
+  }
+  .input-bottom,
+  .input-top {
+    display: none;
+  }
+
+  .checkout-table {
+    width: 100%;
+    display: inline-table;
+  }
+  .checkout-table,
+  th,
+  td {
+    border: black solid 2px;
+    height: auto;
+  }
+  .checkout-table th {
+    background-color: rgb(138, 174, 175);
+  }
+  .checkout-table td {
+    background-color: #bfbfbf4f;
+  }
+  .customer-data {
+    text-align: start;
+  }
+  .accordion {
+    display: none;
+  }
+
+  .footer-flex-container {
+    margin-left: 3px;
+    background-color: rgba(128, 128, 128, 0.42);
+  }
+  .footer-flex-container p {
+    font-size: 15px;
+  }
+
+  .accordion-footer {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: start;
+  }
+
+  .accordion-footer {
+    justify-content: flex-start;
+    gap: 50px;
+    color: black;
+    margin-top: 20px;
+  }
+
+  .accordion-footer a {
+    display: flex;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
   }
 }

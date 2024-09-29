@@ -108,16 +108,39 @@
             <td>199 SEK</td>
           </tr>
         </table>
+        <table class="checkout-table">
+          <tr class="table-top">
+            <th>Produkt</th>
+            <th>Antal</th>
+            <th>Pris</th>
+            <th>Totalt</th>
+          </tr>
+          <tr class="second-row">
+            <td>Svart T-Shirt</td>
+            <td>1</td>
+            <td>199 kr</td>
+            <td>199 kr</td>
+          </tr>
+          <tr class="third-row">
+            <td>Beige T-Shirt</td>
+            <td>2</td>
+            <td>199 kr</td>
+            <td>398 kr</td>
+          </tr>
+        </table>
       </article>
-      <div class="customer-data"><h2>Kunduppgifter</h2></div>
+
       <form class="order-data">
+        <div class="customer-data"><h2>Kunduppgifter</h2></div>
         <section class="form-flex-container">
-        <div><label for="name">Förnamn</label><br />
-        <input type="text" name="name" id="name" /><br />
-      </div>
-        <div><label for="lastname">Efternamn</label><br />
-        <input type="text" name="lastname" id="lastname" /><br />
-      </div>
+          <div>
+            <label for="name">Förnamn</label><br />
+            <input type="text" name="name" id="name" /><br />
+          </div>
+          <div>
+            <label for="lastname">Efternamn</label><br />
+            <input type="text" name="lastname" id="lastname" /><br />
+          </div>
         </section>
         <label for="email">E-post</label><br />
         <input type="email" name="email" id="email" /><br />
@@ -130,11 +153,13 @@
           <label for="city">Stad</label><br />
           <input type="text" id="city" name="city" /><br />
         </fieldset>
-        </form>
-        <input type="radio" name="news-letter" id="news-letter" />
-          <label for="news-letter">Jag vill ta emot nyhetsbrev</label><br>
-      
-      <div class="buy-button"><button type="button" class="btn btn-primary">Köp</button></div>
+      </form>
+      <input type="radio" name="news-letter" id="news-letter" />
+      <label for="news-letter">Jag vill ta emot nyhetsbrev</label><br />
+
+      <div class="buy-button">
+        <button type="button" class="btn btn-primary">Köp</button>
+      </div>
       <ul class="shipping-icons">
         <li><i class="bi bi-globe"></i> Gratis frakt och returer</li>
         <li><i class="bi bi-lightning-fill"></i> Expressfrakt</li>
