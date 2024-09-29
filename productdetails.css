@@ -113,7 +113,7 @@ button i {
 #black-tshirt {
   width: 100%;
   height: auto;
-  padding: 5px;
+  padding: 10px;
   border-radius: 20px;
 }
 
@@ -231,6 +231,11 @@ ul {
     font-size: 2rem;
     padding: 10px;
   }
+  .bi-caret-left {
+    position: absolute;
+    font-size: 2rem;
+    margin-left: 10px;
+  }
 
   .flex-list ul {
     gap: 10px;
@@ -286,6 +291,7 @@ ul {
     flex-direction: row;
     align-items: flex-start;
     margin-bottom: 100px;
+    padding: 10px;
   }
 
   #black-tshirt {
@@ -325,19 +331,16 @@ ul {
 
   .product-tips {
     display: flex;
-    flex-direction: row;
     width: 100%;
     justify-content: space-between;
+    padding: 20px;
   }
 
   .product-tips img {
+    gap: 10px;
     border: groove rgb(174, 170, 170);
     border-radius: 50px;
-    height: auto;
-    object-fit: contain;
     max-width: 255px;
-    width: 100%;
-    padding: 10px;
   }
 
   .shirt-description {
@@ -417,6 +420,9 @@ ul {
 }
 
 @media (min-width: 1024px) {
+  #black-tshirt {
+    height: auto;
+  }
   .searchbar {
     flex-grow: 0;
     width: 40%;
@@ -475,8 +481,6 @@ ul {
   #black-tshirt {
     margin: 0;
     align-items: center;
-    justify-content: center;
-    max-width: 500px;
     width: 100%;
     height: auto;
   }
@@ -490,8 +494,7 @@ ul {
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin: 100px;
-    padding: 150px;
+    padding: 100px;
   }
 
   .description {

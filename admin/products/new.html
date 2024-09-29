@@ -36,22 +36,48 @@
       <nav><h4>Produkter</h4></nav>
       <main>
         <h3>Ny Produkt</h3>
-        <form action="#" method="get">
+        <form action="#" method="post">
           <label for="name">Namn</label><br />
-          <input type="text" id="name" name="name" /><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Ange namn"
+            required
+            maxlength="50"
+          /><br />
           <label for="description">Beskrivning</label><br /><textarea
             name="description"
             id="description"
             cols="40"
             rows="5"
+            placeholder="Ange beskrivning"
           ></textarea
           ><br />
-          <label for="choose-file">Bild</label><br />
-          <input type="file" id="choose-file" name="choose-file" /><br />
+          <label for="choose-image">Bild</label><br />
+          <input
+            type="file"
+            id="choose-image"
+            name="choose-image"
+            required
+            accept="image/png, image/jpeg, image/gif"
+            title="Du kan enbart välja bildfiler"
+          /><br />
           <label for="sku">SKU</label><br />
-          <input type="text" id="sku" name="sku" maxlength="21" /><br />
+          <input
+            type="text"
+            id="sku"
+            name="sku"
+            placeholder="Ange SKU"
+            required
+            pattern="^[A-Z]{3}\d{3}$"
+            title="Formatet är ogiltigt. Var god skriv in giltigt format, exempel: AAA111"
+            maxlength="6"
+          /><br />
           <label for="price">Pris</label><br />
           <input type="number" id="price" name="price" /><br />
+          <label for="date">Publiseringsdatum</label><br />
+          <input type="date" id="date" name="date" /><br />
           <label id="category">Kategorier</label><br />
           <input type="radio" />
           <label>T-Shirts</label><br />
@@ -61,8 +87,9 @@
           <label>Byxor</label><br />
           <input type="radio" />
           <label>Skor</label><br />
+          <label for="submit"></label><br />
+          <input type="submit" value="Lägg till" id="submit" name="submit" />
         </form>
-        <button class="btn btn-primary me-md-2" type="submit">Lägg till</button>
       </main>
     </div>
   </body>
