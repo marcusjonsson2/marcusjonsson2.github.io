@@ -166,11 +166,9 @@ button i {
   width: 100%;
   max-width: 400px;
 }
-
-.shipping-icons {
-  margin-top: 20px;
+.slider-container {
+  display: none;
 }
-
 .shipping-icons li {
   display: flex;
   align-items: center;
@@ -416,6 +414,74 @@ ul {
     font-style: italic;
     color: rgb(0, 0, 0);
     text-decoration: none;
+  }
+  #svart-tshirt {
+    width: 150px;
+    height: 150px;
+  }
+  .slider-container {
+    position: relative;
+    display: block;
+
+    overflow: hidden;
+    margin: 20px 0;
+  }
+  .slide {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin: 20px;
+    border-radius: 10%;
+  }
+
+  .slider-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 200%;
+  }
+
+  .slider-track img {
+    width: calc(100% / 3);
+    flex-shrink: 0;
+    width: 100%;
+    border-radius: 10%;
+    border: groove black 2px;
+  }
+
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .prev-btn {
+    left: 10px;
+  }
+
+  .next-btn {
+    right: 10px;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  #slide1:checked ~ .slider-track {
+    transform: translateX(0);
+  }
+
+  #slide2:checked ~ .slider-track {
+    transform: translateX(-50%);
+  }
+
+  #slide3:checked ~ .slider-track {
+    transform: translateX(-200%);
   }
 }
 
