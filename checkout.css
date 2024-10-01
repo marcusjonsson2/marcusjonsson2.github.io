@@ -307,6 +307,9 @@ ul {
   #email {
     width: 50%;
   }
+  #city {
+    width: 50%;
+  }
   .input-bottom,
   .input-top {
     display: none;
